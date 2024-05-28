@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapi.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #23856d;
+  color: #ffffff;
+  height: 58px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+
+.nav-bar {
+  display: flex;
+  padding-top: 15px;
+  padding-left: 35px;
+}
+
+.nav-bar h6 {
+  padding-left: 15px;
+  font-family: "Montserrat";
+}
+
+#email {
+  padding-left: 40px;
+}
+
+#nav-bar-h {
+  padding-top: 15px;
+  font-family: "Montserrat";
+}
+
+#follow {
+  display: flex;
+  padding-top: 15px;
+  margin-right: 40px;
+}
+
+#follow h6 {
+  padding-right: 20px;
+}
+
+.follow-image {
+  width: 120px;
+  height: 26px;
+  padding: 0px 0.5px 0px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.follow-image-1 {
+  padding-right: 9px;
+  position: relative;
+  height: 20px;
+  /* padding: 5px 0px 0px 0px; */
+  gap: 0px;
+  opacity: 0px;
+}
+
+.navbar-light {
+  height: 58px;
+  top: 70px;
+  padding: 0px 17px 0px 38px;
+  gap: 24px;
+  border-radius: 34px 0px 0px 0px;
+  opacity: 0px;
+  display: flex;
+  font-family: "Montserrat";
+}
+
+.navbar-light h3 {
+  width: 287px;
+  height: 58px;
+  left: 38px;
+  padding: 13px 79px 13px 0px;
+  gap: 15px;
+  opacity: 0px;
+  color: #252b42;
+  letter-spacing: 0.10000000149011612px;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+}
+
+.navbar-light ul {
+  display: flex;
+  height: 25px;
+  top: 16.5px;
+  gap: 15px;
+  opacity: 0px;
+  color: #737373;
+  height: Hug (25px) px;
+  top: 16.5px;
+  gap: 15px;
+  opacity: 0px;
+}
+
+.inner-navbar-light-1 {
+  position: relative;
+  right: 100px;
+  padding: 13px 79px 13px 0px;
+}
+
+.inner-navbar-light-1 ul {
+  width: 400px;
+}
+
+.navbar-light ul li {
+  list-style: none;
+  font-family: "Montserrat";
+}
+
+.inner-navbar-light {
+  display: flex;
+  width: Hug 324px;
+  height: 54px;
+  top: 2px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 150px;
+  color: #23a6f0;
+}
+
+.inner-navbar-light li {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.navbar-BTN {
+  background-color: transparent;
+  color: #23a6f0;
+  outline: none;
+  font-family: "Montserrat";
+  width: 190px;
+}
