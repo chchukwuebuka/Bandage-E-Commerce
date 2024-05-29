@@ -152,3 +152,215 @@ nav {
   font-family: "Montserrat";
   width: 190px;
 }
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  width: 1130px;
+  height: 776px;
+  position: relative;
+  bottom: 74px;
+  left: 100px;
+  padding: 80px 0px 80px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.inner-hero {
+  position: relative;
+  top: 96px;
+  padding-left: 24px;
+}
+
+.inner-hero-1 {
+  position: relative;
+  top: 110px;
+}
+
+.hero-section h2 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #252b42;
+}
+
+.hero-section h6 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #252b42;
+}
+
+.hero-section h3 {
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+}
+
+.hero-image {
+  padding-right: 16px;
+  position: relative;
+  bottom: 15px;
+}
+
+#inner-hero-img {
+  margin-top: 7px;
+}
+
+.inner-hero-section {
+  display: flex;
+  position: relative;
+  bottom: 71px;
+}
+
+#hero-1 {
+  padding-left: 15px;
+}
+
+.items {
+  color: #2dc071;
+}
+
+section h4 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #737373;
+}
+
+section h3 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #252b42;
+}
+
+section p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #737373;
+}
+
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section li {
+  list-style: none;
+}
+
+.section-images {
+  width: 120px;
+  height: 180px;
+  background-color: #252b42;
+  padding: 0;
+  margin: 0;
+}
+
+section h5 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #252b42;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 1000px;
+  position: relative;
+  left: 170px;
+  margin-top: 40px;
+}
+
+.product-item {
+  flex: 1 1 calc(20% - 16px);
+  max-width: calc(20% - 16px);
+  padding: 16px;
+  text-align: center;
+}
+
+.product-item h2 {
+  font-size: 1.25em;
+  margin: 8px 0;
+}
+
+.product-item p {
+  margin: 4px 0;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #737373;
+}
+
+#discount {
+  color: #23856d;
+  padding-left: 5px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+}
+
+#product-amount {
+  display: flex;
+  padding-left: 25px;
+}
+
+#product-price {
+  color: #bdbdbd;
+}
+
+.view-more-btn {
+  padding: 15px 40px 15px 40px;
+  gap: 10px;
+  border-radius: 5px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #23a6f0;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  background-color: transparent;
+  color: #23a6f0;
+  margin-bottom: 20px;
+  position: relative;
+  left: 550px;
+  top: 70px;
+}
