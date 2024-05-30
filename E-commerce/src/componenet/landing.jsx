@@ -17,9 +17,30 @@ import heroimage from "./images/media bg-cover.png";
 import heroimage1 from "./images/media bg-cover (1).png";
 import heroimage2 from "./images/media bg-cover (2).png";
 import heroimage3 from "./images/media bg-cover (3).png";
-import book from './images/bx_bxs-book-reader.png'
-import carbonBook from './images/carbon_book.png'
-import arrow from './images/uil_arrow-growth.png'
+import book from "./images/bx_bxs-book-reader.png";
+import carbonBook from "./images/carbon_book.png";
+import arrow from "./images/uil_arrow-growth.png";
+import unsplash1 from "./images/unsplash_hHdHCfAifHU.png";
+import unsplash2 from "./images/unsplash_tVEqStC2uz8.png";
+import unsplash3 from "./images/unsplash_dEGu-oCuB1Y.png";
+import tag from "./images/tag.png";
+import icontimer from "./images/icon akar-icons-calendar.png";
+import iconchart from "./images/icon ant-design-area-chart-outlined.png";
+import user1 from "./images/user.1.png";
+import star from "./images/stars.png";
+import camera from "./images/unsplash_0y8p69vwIYM.png";
+import lady from "./images/unsplash_ah7yIXWrtKs.png";
+import street from "./images/unsplash_6_dx4H4yi1Y.png";
+import icecream from "./images/unsplash_GHztzvLLOdQ.png";
+import Blady from "./images/unsplash_UUTOuXqaExk.png";
+import writing from "./images/unsplash_rhn8ff1G_QY.png";
+import mountain from "./images/unsplash_jo40QKbxUP0.png";
+import snow from "./images/unsplash_QLGA5Zv3doo.png";
+import blue from "./images/unsplash_1R1ecHV4i0Y.png";
+import facebook from "./images/facebook.png";
+import instagram from "./images/ant-design_instagram-outlined.png";
+import twitter from "./images/twitter.png";
+import none from './images/@none.png'
 
 function Landing() {
   const { data, error, isLoading } = useGetPostsQuery();
@@ -183,8 +204,8 @@ function Landing() {
                 <h5>{product.title}</h5>
                 <p> {product.category}</p>
                 <div id="product-amount">
-                <p id="product-price">${product.price}</p>
-                <p id="discount">{product.discountPercentage}%</p>
+                  <p id="product-price">${product.price}</p>
+                  <p id="discount">{product.discountPercentage}%</p>
                 </div>
               </li>
             ))}
@@ -197,26 +218,274 @@ function Landing() {
         )}
       </section>
 
-      <div>
+      <div className="feature-products">
         <h4>Featured Products</h4>
         <h3>THE BEST SERVICES</h3>
         <p>Problems trying to resolve the conflict between </p>
-        <div>
+        <div className="feature-products-1">
+          <div className="inner-cards">
             <img src={book} alt="" />
             <h3>Easy Wins</h3>
             <p>Get your best looking smile now!</p>
-        </div>
-        <div>
+          </div>
+          <div className="inner-cards">
             <img src={carbonBook} alt="" />
             <h3>Concrete</h3>
-            <p>Defalcate is most focused in helping you discover your most beautiful smile</p>
-        </div>
-        <div>
+            <p>
+              Defalcate is most focused in helping you discover your most
+              beautiful smile
+            </p>
+          </div>
+          <div className="inner-cards">
             <img src={arrow} alt="" />
             <h3>Hack Growth</h3>
             <p>Overcame any hurdle or any other problem.</p>
+          </div>
         </div>
-     </div>
+      </div>
+
+      <div className="container">
+        <h6>Practice Advice</h6>
+        <h2>Featured Posts</h2>
+        <div className="inner-container">
+          <div className="inner-container-1">
+            <div className="tag">
+              {" "}
+              <img src={tag} alt="" />
+            </div>
+            <img src={unsplash1} alt="" />
+            <div>
+              <span className="google">Google</span>
+              <span className="trending">&nbsp;&nbsp; Trending</span>
+              <span className="new">&nbsp;&nbsp; New</span>
+              <h4>Loudest à la Madison #1 (L'integral)</h4>
+              <p>
+                We focus on ergonomics and meeting you where you work. It's only
+                a keystroke away.
+              </p>
+              <div>
+                <div className="frame1">
+                  <div>
+                    <p className="april">
+                      <img src={icontimer} alt="" />
+                      <span> 22 April 2021</span>
+                    </p>
+                  </div>
+                  <div>
+                    <p className="comments">
+                      <img src={iconchart} alt="" />
+                      <span>10 comments</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="learn-more">
+                <h6>Learn More <img src={none} alt="" /></h6>
+            </div>
+          </div>
+          <div className="inner-container-1">
+            <div className="tag">
+              {" "}
+              <img src={tag} alt="" />
+            </div>
+            <img src={unsplash2} alt="" />
+            <div>
+              <span className="google">Google</span>
+              <span className="trending">&nbsp; &nbsp; Trending</span>
+              <span className="new">&nbsp; &nbsp; New</span>
+              <h4>Lou dest à la Madison #1 (L'integral)</h4>
+              <p>
+                We focus on ergonomics and meeting you where you work. It's only
+                a keystroke away.
+              </p>
+              <div>
+                <div className="frame1">
+                  <div>
+                    <p>
+                      <img src={icontimer} alt="" />
+                      22 April 2021
+                    </p>
+                  </div>
+                  <div>
+                    <p className="comments">
+                      <img src={iconchart} alt="" />
+                      10 comments
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="learn-more">
+                <h6>Learn More <img src={none} alt="" /></h6>
+            </div>
+          </div>
+          <div className="inner-container-1">
+            <div className="tag">
+              {" "}
+              <img src={tag} alt="" />
+            </div>
+            <img src={unsplash3} alt="" />
+            <div>
+              <span className="google">Google</span>
+              <span className="trending">&nbsp;&nbsp; Trending</span>
+              <span className="new">&nbsp;&nbsp; New</span>
+              <h4>Loudest à la Madison #1 (L'integral)</h4>
+              <p>
+                We focus on ergonomics and meeting you where you work. It's only
+                a keystroke away.
+              </p>
+              <div>
+                <div className="frame1">
+                  <div>
+                    <p>
+                      <img src={icontimer} alt="" />
+                      22 April 2021
+                    </p>
+                  </div>
+                  <div>
+                    <p className="comments">
+                      <img src={iconchart} alt="" />
+                      10 comments
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="learn-more">
+                <h6>Learn More <img src={none} alt="" /></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="testimonial">
+        <div className="inner-testimonial">
+          <h3>What they say about us</h3>
+          <div id="testi-image">
+            <img src={user1} alt="" />
+            <img id="star" src={star} alt="" />
+          </div>
+          <h6>
+            Slate helps you see how many more days you need to work to reach
+            your financial goal.
+          </h6>
+          <p id="regina">Regina Miles</p>
+          <p id="des">Designer</p>
+        </div>
+        <div className="tiastimonial-images">
+          <img src={camera} alt="" />
+          <img src={lady} alt="" />
+          <img src={street} alt="" />
+          <img src={icecream} alt="" />
+          <img src={Blady} alt="" />
+          <img src={writing} alt="" />
+          <img src={mountain} alt="" />
+          <img src={snow} alt="" />
+          <img src={blue} alt="" />
+        </div>
+        <div></div>
+      </div>
+
+      <div className="better-experience">
+        <div className="better-experience-1">
+          <h6>Designing Better Experience</h6>
+          <h2>Problems trying to resolve the conflict between </h2>
+          <p>
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics:{" "}
+          </p>
+          <h3>$16.48</h3>
+          <button id="better-btn">ADD YOUR CALL TO ACTION</button>
+        </div>
+      </div>
+
+      <div className="bandage">
+        <h3>Bandage</h3>
+        <div>
+          <img src={facebook} alt="" />
+          <img src={instagram} alt="" />
+          <img src={twitter} alt="" />
+        </div>
+      </div>
+
+      <footer>
+        <div className="inner-footer">
+            <div className="inner-footer-1">
+              <h5>Company Info</h5>
+              <a href="">
+                <p>About Us</p>
+              </a>
+              <a href="">
+                <p>Carrier</p>
+              </a>
+              <a href="">
+                <p>We are hiring</p>
+              </a>
+              <a href="">
+                <p>Blog</p>
+              </a>
+            </div>
+            <div className="inner-footer-1">
+              <h5>Legal</h5>
+              <a href="">
+                <p>About Us</p>
+              </a>
+              <a href="">
+                <p>Carrier</p>
+              </a>
+              <a href="">
+                <p>We are hiring</p>
+              </a>
+              <a href="">
+                <p>Blog</p>
+              </a>
+            </div>
+            <div className="inner-footer-1">
+              <h5>Features</h5>
+              <a href="">
+                <p>Business Marketing</p>
+              </a>
+              <a href="">
+                <p>User Analytic</p>
+              </a>
+              <a href="">
+                <p>Live Chat</p>
+              </a>
+              <a href="">
+                <p>Unlimited Support</p>
+              </a>
+            </div>
+            <div className="inner-footer-1">
+              <h5>Resources</h5>
+              <a href="">
+                <p>IOS & Android</p>
+              </a>
+              <a href="">
+                <p>Watch a Demo</p>
+              </a>
+              <a href="">
+                <p>Customers</p>
+              </a>
+              <a href="">
+                <p>API</p>
+              </a>
+            </div>
+            <div className="inner-footer-1">
+              <h5>Get In Touch</h5>
+              <div className="input-group">
+                <input
+                  type="Email"
+                  className="input-field"
+                  placeholder="Your Email"
+                />
+                <button className="subscribe-btn">Subscribe</button>
+              </div>
+                <p id="inner-footer-1-p">Lore imp sum dolor Amit</p>
+            </div>
+        </div>
+        <div  id="last-footer"><p>Made With Love By Finland All Right Reserved </p></div>
+      </footer>
     </div>
   );
 }
