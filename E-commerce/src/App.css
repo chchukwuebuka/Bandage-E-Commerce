@@ -271,11 +271,17 @@ section li {
 }
 
 .section-images {
-  width: 120px;
-  height: 180px;
+  /* width: 120px;
+  height: 180px; */
   background-color: #252b42;
   padding: 0;
   margin: 0;
+
+  width: 183px;
+height: 238px;
+gap: 0px;
+opacity: 0px;
+
 }
 
 section h5 {
