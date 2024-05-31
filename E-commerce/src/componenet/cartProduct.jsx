@@ -12,22 +12,13 @@ import search from "./images/icn settings icn-xs (4).png";
 import search1 from "./images/icn settings icn-xs (5).png";
 import search2 from "./images/icn settings icn-xs (6).png";
 import none1 from "./images/icn arrow-right icn-xs.png";
-import link from "./images/link.png";
-import couch from "./images/unsplash_QANOF9iJlFs.png";
-import colmed from './images/col-md-2.png'
-import colmed1 from './images/col-md-2 (1).png'
-import colmed2 from './images/col-md-2 (2).png'
-import colmed3 from './images/col-md-2 (3).png'
-import colmed4 from './images/col-md-2 (4).png'
-import colmed5 from './images/col-md-2 (5).png'
 import facebook from "./images/facebook.png";
 import instagram from "./images/ant-design_instagram-outlined.png";
 import twitter from "./images/twitter.png";
+import arrow1 from './images/icn arrow-right icn-xs (1).png'
 
-
-function Product() {
+function CartProduct() {
   const { data: products, error, isLoading } = useGetPostsQuery();
-
   return (
     <div>
       <nav className="product-nav">
@@ -64,7 +55,7 @@ function Product() {
             <ul>
               <li>Home</li>
               <li>
-              <Link to="/cartProduct"> Shop <img src={dropdown} alt="" /></Link> 
+                Shop <img src={dropdown} alt="" />
               </li>
               <li>About</li>
               <li>Blog</li>
@@ -91,71 +82,22 @@ function Product() {
             </ul>
           </div>
         </div>
-      </div>
-
-      <div className="home">
+        <div className="home">
         <div className="inner-home">
           <ul>
             <li>
-              Home <img src={none1} alt="" />
+              Home <img id="none1" src={none1} alt="" />
             </li>
           </ul>
-          <Link to="/cartProduct"><h6>Shop</h6> </Link> 
-          
+          <h6>Shop <img id="arrow1" src={arrow1} alt="" /></h6>
+           <h6>Shopping Cart</h6>
         </div>
       </div>
-
-      <div></div>
-
-      <div className="product-discription-2">
-        <ul>
-          <li>Description</li>
-          <li>Additional Information</li>
-          <li>
-            Reviews <img src={link} alt="" />
-          </li>
-        </ul>
       </div>
-
-      <div>
-        <div className="container">
-          <div className="container-row">
-            <div className="card">
-              <h3>the quick fox jumps over </h3>
-              <div>
-                <p>
-                  Met minim Mollie non desert Alamo est sit cliquey dolor do met
-                  sent. RELIT official consequent door ENIM RELIT Mollie.
-                  Excitation venial consequent sent nostrum met.
-                </p>
-              </div>
-              <div>
-                <p id="inner-card">
-                  Met minim Mollie non desert Alamo est sit cliquey dolor do met
-                  sent. RELIT official consequent door ENIM RELIT Mollie.
-                  Excitation venial consequent sent nostrum met.
-                </p>
-              </div>
-              <div>
-                <p>
-                  Met minim Mollie non desert Alamo est sit cliquey dolor do met
-                  sent. RELIT official consequent door ENIM RELIT Mollie.
-                  Excitation venial consequent sent nostrum met.
-                </p>
-              </div>
-            </div>
-
-            <div className="card-img">
-              <img src={couch} alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
 
       <div className="BESTSELLER-PRODUCTS">
         <div className="BESTSELLER-PRODUCT-1">
-          <h3>BESTSELLER PRODUCTS</h3>
+          <h3>PRODUCTS RELATED TO ITEMS IN YOUR CART</h3>
           {isLoading && <p>Loading...</p>}
         {error && <p>Error loading products</p>}
           {products && (
@@ -177,17 +119,6 @@ function Product() {
               ))}
             </div>
           )}
-        </div>
-      </div>
-      
-      <div className="cliants">
-        <div className="cliants-1">
-            <img src={colmed} alt="" />
-            <img src={colmed1} alt="" />
-            <img src={colmed2} alt="" />
-            <img src={colmed3} alt="" />
-            <img src={colmed4} alt="" />
-            <img src={colmed5} alt="" />
         </div>
       </div>
 
@@ -278,8 +209,9 @@ function Product() {
         <div  id="product-last-footer"><p>Made With Love By Finland All Right Reserved </p></div>
       </footer>
 
+
     </div>
-  );
+  )
 }
 
-export default Product;
+export default CartProduct
