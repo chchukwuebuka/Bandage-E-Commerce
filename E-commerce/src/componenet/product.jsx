@@ -191,7 +191,7 @@ function Product() {
         </div>
       </div>
 
-      <div className="bandage">
+      <div className="product-bandage">
         <h3>Bandage</h3>
         <div>
           <img src={facebook} alt="" />
