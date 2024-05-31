@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { increment } from "../assets/appSlice";
 import { useDispatch } from "react-redux";
 import { useGetPostsQuery } from "../assets/apiSlice";
@@ -41,13 +41,17 @@ import blue from "./images/unsplash_1R1ecHV4i0Y.png";
 import facebook from "./images/facebook.png";
 import instagram from "./images/ant-design_instagram-outlined.png";
 import twitter from "./images/twitter.png";
-import none from './images/@none.png'
+import none from "./images/@none.png";
+import iconSearch from './images/icn search .icn-xs.png'
+import iconCart from './images/icn shopping-cart .icn-xs.png'
+import iconMenu from './images/icn menu .icn-xs.png'
 
 function Landing() {
   const { data, error, isLoading } = useGetPostsQuery();
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
   const [visibleProducts, setVisibleProducts] = useState(10);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const incrementHandler = (e) => {
     e.preventDefault();
@@ -59,11 +63,45 @@ function Landing() {
     setVisibleProducts((prev) => prev + 10);
   };
 
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div>
+    <div id="color">
+      <button className="menu-toggle" onClick={toggleMenu}>
+        {/* ☰ */}
+        <img className="icon-mobile-view-3" src={iconMenu} alt="" />
+      </button>
+      {menuOpen && (
+        <div className="mobile-menu">
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Pages</li>
+            <li>
+              Shop <img src={dropdown} alt="" />
+            </li>
+            <button className="navbar-BTN">
+              <img src={humanicon} alt="" /> &nbsp;Login / Register
+            </button>
+            <li>
+              <img src={search2} alt="" />
+            </li>
+          </ul>
+          <h6>(225) 555-0118</h6>
+          <div className="follow-image">
+            <img className="follow-image-1" src={X} alt="" />
+            <img className="follow-image-1" src={settings} alt="" />
+            <img className="follow-image-1" src={FB} alt="" />
+            <img className="follow-image-1" src={message} alt="" />
+          </div>
+          <h6>michelle.rivera@example.com</h6>
+        </div>
+      )}
       <nav>
         <div className="nav-bar">
           <div>
@@ -86,13 +124,24 @@ function Landing() {
           </div>
         </div>
       </nav>
-      <div className="navbar-light">
+
+      <div className="navbar-light mobile-nav-bar" >
+        <div className="icon-mobile-view">
+          <img className="icon-mobile-view-1" src={iconSearch} alt="" />
+          <img className="icon-mobile-view-2" src={iconCart} alt="" />
+        </div>
+        <div className="mobile-home">
+        <li id="mobile-home">Home</li>
+        <li id="mobile-home">Product</li>
+        <li id="mobile-home">Pricing</li>
+        <li id="mobile-home">Contact</li>
+        </div>
         <div>
           <h3>Bandage</h3>
         </div>
         <div className="inner-navbar-light-1">
           <ul>
-            <li>Home</li>
+            <li id="mobile-home">Home</li>
             <li>
               Shop <img src={dropdown} alt="" />
             </li>
@@ -108,13 +157,15 @@ function Landing() {
           </button>
           <ul>
             <li>
-              <img src={search} alt="" />
+              <img className="mobile-view" src={search} alt="" />
+            </li>
+            <li className="mobile-view">
+              <Link to="/product">
+                <img src={search1} alt="" />
+              </Link>
             </li>
             <li>
-            <Link to="/product"><img src={search1} alt="" /></Link>   
-            </li>
-            <li>
-              <img src={search2} alt="" />
+              <img className="search2" src={search2} alt="" />
             </li>
           </ul>
         </div>
@@ -145,7 +196,7 @@ function Landing() {
             <img id="inner-hero-img" src={heroimage1} alt="" />
           </div>
           <div className="inner-hero-section">
-            <div>
+            <div >
               <div className="inner-hero">
                 <h6>
                   <span className="items">Items</span>
@@ -153,7 +204,7 @@ function Landing() {
                 <h3>FURNITURE</h3>
                 <h6>Read</h6>
               </div>
-              <img src={heroimage2} alt="" />
+              <img className="heroimage2" src={heroimage2} alt="" />
             </div>
             <div id="hero-1">
               <div className="inner-hero">
@@ -273,16 +324,18 @@ function Landing() {
                     </p>
                   </div>
                   <div>
-                    <p className="comments">
+                  <p className="comments">
                       <img src={iconchart} alt="" />
-                      <span>10 comments</span>
+                      10 comments
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div id="learn-more">
-                <h6>Learn More <img src={none} alt="" /></h6>
+              <h6>
+                Learn More <img src={none} alt="" />
+              </h6>
             </div>
           </div>
           <div className="inner-container-1">
@@ -318,7 +371,9 @@ function Landing() {
               </div>
             </div>
             <div id="learn-more">
-                <h6>Learn More <img src={none} alt="" /></h6>
+              <h6>
+                Learn More <img src={none} alt="" />
+              </h6>
             </div>
           </div>
           <div className="inner-container-1">
@@ -354,7 +409,9 @@ function Landing() {
               </div>
             </div>
             <div id="learn-more">
-                <h6>Learn More <img src={none} alt="" /></h6>
+              <h6>
+                Learn More <img src={none} alt="" />
+              </h6>
             </div>
           </div>
         </div>
@@ -412,80 +469,82 @@ function Landing() {
 
       <footer>
         <div className="inner-footer">
-            <div className="inner-footer-1">
-              <h5>Company Info</h5>
-              <a href="">
-                <p>About Us</p>
-              </a>
-              <a href="">
-                <p>Carrier</p>
-              </a>
-              <a href="">
-                <p>We are hiring</p>
-              </a>
-              <a href="">
-                <p>Blog</p>
-              </a>
+          <div className="inner-footer-1">
+            <h5>Company Info</h5>
+            <a href="">
+              <p>About Us</p>
+            </a>
+            <a href="">
+              <p>Carrier</p>
+            </a>
+            <a href="">
+              <p>We are hiring</p>
+            </a>
+            <a href="">
+              <p>Blog</p>
+            </a>
+          </div>
+          <div className="inner-footer-1">
+            <h5>Legal</h5>
+            <a href="">
+              <p>About Us</p>
+            </a>
+            <a href="">
+              <p>Carrier</p>
+            </a>
+            <a href="">
+              <p>We are hiring</p>
+            </a>
+            <a href="">
+              <p>Blog</p>
+            </a>
+          </div>
+          <div className="inner-footer-1">
+            <h5>Features</h5>
+            <a href="">
+              <p>Business Marketing</p>
+            </a>
+            <a href="">
+              <p>User Analytic</p>
+            </a>
+            <a href="">
+              <p>Live Chat</p>
+            </a>
+            <a href="">
+              <p>Unlimited Support</p>
+            </a>
+          </div>
+          <div className="inner-footer-1">
+            <h5>Resources</h5>
+            <a href="">
+              <p>IOS & Android</p>
+            </a>
+            <a href="">
+              <p>Watch a Demo</p>
+            </a>
+            <a href="">
+              <p>Customers</p>
+            </a>
+            <a href="">
+              <p>API</p>
+            </a>
+          </div>
+          <div className="inner-footer-1">
+            <h5>Get In Touch</h5>
+            <div className="input-group">
+              <input
+                type="Email"
+                className="input-field"
+                placeholder="Your Email"
+              />
+              <button className="subscribe-btn">Subscribe</button>
             </div>
-            <div className="inner-footer-1">
-              <h5>Legal</h5>
-              <a href="">
-                <p>About Us</p>
-              </a>
-              <a href="">
-                <p>Carrier</p>
-              </a>
-              <a href="">
-                <p>We are hiring</p>
-              </a>
-              <a href="">
-                <p>Blog</p>
-              </a>
-            </div>
-            <div className="inner-footer-1">
-              <h5>Features</h5>
-              <a href="">
-                <p>Business Marketing</p>
-              </a>
-              <a href="">
-                <p>User Analytic</p>
-              </a>
-              <a href="">
-                <p>Live Chat</p>
-              </a>
-              <a href="">
-                <p>Unlimited Support</p>
-              </a>
-            </div>
-            <div className="inner-footer-1">
-              <h5>Resources</h5>
-              <a href="">
-                <p>IOS & Android</p>
-              </a>
-              <a href="">
-                <p>Watch a Demo</p>
-              </a>
-              <a href="">
-                <p>Customers</p>
-              </a>
-              <a href="">
-                <p>API</p>
-              </a>
-            </div>
-            <div className="inner-footer-1">
-              <h5>Get In Touch</h5>
-              <div className="input-group">
-                <input
-                  type="Email"
-                  className="input-field"
-                  placeholder="Your Email"
-                />
-                <button className="subscribe-btn">Subscribe</button>
-              </div>
-                <p id="inner-footer-1-p">Lore imp sum dolor Amit</p>
-            </div>
+            <p id="inner-footer-1-p">Lore imp sum dolor Amit</p>
+          </div>
         </div>
-        <div  id="last-footer"><p>Made With Love By Finland All Right Reserved </p></div>
+        <div id="last-footer">
+          <p>Made With Love By Finland All Right Reserved </p>
+        </div>
       </footer>
     </div>
   );
