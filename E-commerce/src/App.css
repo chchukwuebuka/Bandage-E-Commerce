@@ -271,19 +271,15 @@ section li {
 }
 
 .section-images {
-
   width: 120px;
   height: 180px;
   background-color: #d8dbe5;
-
   padding: 0;
   margin: 0;
-
   width: 183px;
-height: 238px;
-gap: 0px;
-opacity: 0px;
-
+  height: 238px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 section h5 {
@@ -653,7 +649,7 @@ section h5 {
   opacity: 0px;
 }
 
-.better-experience-1{
+.better-experience-1 {
   padding-top: 170px;
 }
 
@@ -683,75 +679,74 @@ section h5 {
   padding-top: 20px;
 }
 
-.better-experience p{
+.better-experience p {
   width: 447px;
-height: 40px;
-gap: 0px;
-opacity: 0px;
-margin-left: 450px;
-font-family: "Montserrat";
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0.20000000298023224px;
-text-align: center;
-color: #737373;
-padding-top: 50px;
+  height: 40px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 450px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #737373;
+  padding-top: 50px;
 }
 
-.better-experience h3{
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: 0.10000000149011612px;
-text-align: center;
-color: #23856d;
-padding-top: 60px;
+.better-experience h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #23856d;
+  padding-top: 60px;
 }
 
-.better-experience button{
-width: 302px;
-height: Fixed 52px;
-padding: 15px 40px 15px 40px;
-gap: 10px;
-border-radius: 5px 0px 0px 0px;
-opacity: 0px;
-background: #23A6F0;
-margin-left: 525px;
-margin-top: 30px;
+.better-experience button {
+  width: 302px;
+  height: Fixed 52px;
+  padding: 15px 40px 15px 40px;
+  gap: 10px;
+  border-radius: 5px 0px 0px 0px;
+  opacity: 0px;
+  background: #23a6f0;
+  margin-left: 525px;
+  margin-top: 30px;
 }
 
-.bandage{
+.bandage {
   width: 1347px;
-height: 142px;
-padding: 0px 195px 4px 195px;
-gap: 40px;
-opacity: 0px;
-background: #FAFAFA;  
-display: flex;
-justify-content: space-between; 
+  height: 142px;
+  padding: 0px 195px 4px 195px;
+  gap: 40px;
+  opacity: 0px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
 }
 
-.bandage h3{
-   width: 114px;
+.bandage h3 {
+  width: 114px;
   height: 32px;
   top: 13px;
   gap: 0px;
   opacity: 0px;
 
-
-font-family: "Montserrat";
-font-size: 24px;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: 0.10000000149011612px;
-text-align: left;
-color: #252B42; 
-padding-top: 60px;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #252b42;
+  padding-top: 60px;
 }
 
-.bandage img{
+.bandage img {
   /* width: 112px; */
   height: 24px;
   gap: 20px;
@@ -760,69 +755,68 @@ padding-top: 60px;
   padding-left: 10px;
 }
 
-footer{
+footer {
   /* width: 1440px; */
-height: 272px;
-top: 142px;
-padding: 0px 195px 2px 195px;
-gap: 40px;
-opacity: 0px;
+  height: 272px;
+  top: 142px;
+  padding: 0px 195px 2px 195px;
+  gap: 40px;
+  opacity: 0px;
 }
 
-.inner-footer{
-display: flex;
+.inner-footer {
+  display: flex;
   width: Fixed 1050px;
-height: 270px;
-left: 195px;
-padding: 50px 0px 50px 0px;
-gap: 0px;
-opacity: 0px;
+  height: 270px;
+  left: 195px;
+  padding: 50px 0px 50px 0px;
+  gap: 0px;
+  opacity: 0px;
 }
 
-footer h5{
-font-family: "Montserrat";
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0.10000000149011612px;
-text-align: left;
-color: #252B42;
-padding-bottom: 20px;
+footer h5 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: left;
+  color: #252b42;
+  padding-bottom: 20px;
 }
 
 footer a {
-
-font-family: "Montserrat";
-font-size: 14px;
-font-weight: 700;
-line-height: 34px;
-letter-spacing: 0.20000000298023224px;
-text-align: left;
-color: #737373;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #737373;
 }
 
-.inner-footer-1{
-  width:  1041px;
+.inner-footer-1 {
+  width: 1041px;
   height: 170px;
   gap: 30px;
   opacity: 0px;
 }
 
-#inner-footer-1-p{
+#inner-footer-1-p {
   font-family: Montserrat;
-font-size: 12px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0.20000000298023224px;
-text-align: left;
-color: #737373;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #737373;
 }
 
-.input-group{
+.input-group {
   display: flex;
-    border: 1px solid #E6E6E6;
-    border-radius: 4px;
-    overflow: hidden;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .input-field {
@@ -830,49 +824,48 @@ color: #737373;
   padding: 10px;
   flex: 1;
   outline: none;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   color: #737373;
 }
 
 .subscribe-btn {
-width: 117px;
-height: 58px;
-padding: 15px 22.5px 15px 22.5px;
-gap: 10px;
-border-radius: 0px 5px 5px 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-background-color: #23A6F0;
-cursor: pointer;
+  width: 117px;
+  height: 58px;
+  padding: 15px 22.5px 15px 22.5px;
+  gap: 10px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #23a6f0;
+  cursor: pointer;
 }
 
-#last-footer{
-height: 70px;
-/* top: 14px; */
-gap: 40px;
-opacity: 0px;
-background: #FAFAFA;
-color: #737373;
+#last-footer {
+  height: 70px;
+  /* top: 14px; */
+  gap: 40px;
+  opacity: 0px;
+  background: #fafafa;
+  color: #737373;
 }
 
-#learn-more h6{
-font-family: "Montserrat";
-font-size: 14px;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0.20000000298023224px;
-text-align: left;
-color: #737373;
+#learn-more h6 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #737373;
 }
 
-#learn-more img{
+#learn-more img {
   width: 12px;
-height: 16px;
-padding: 0px 0.38px 0px 0px;
-margin-left: 5px;
-position: relative;
-top: 5px;
-gap: 0px;
-opacity: 0px;
-
+  height: 16px;
+  padding: 0px 0.38px 0px 0px;
+  margin-left: 5px;
+  position: relative;
+  top: 5px;
+  gap: 0px;
+  opacity: 0px;
 }
