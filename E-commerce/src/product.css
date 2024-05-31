@@ -14,7 +14,7 @@
   
 
 .product-nav {
-  width: 1349px;
+  width: 1225px;
   height: 58px;
   padding: 9px 169px 3px 143px;
   gap: 34px;
@@ -84,7 +84,7 @@
 }
 
 .product-navbar-light {
-  width: 1349px;
+  width: 1225px;
   height: 60px;
   padding: 0px 0px 10px 0px;
   gap: 0px;
@@ -314,7 +314,7 @@
 }
 
 .BESTSELLER-PRODUCTS {
-  width: 1347px;
+  width: 1225px;
   height: 1086px;
   padding: 0px 121px 0px 195px;
   gap: 0px;
@@ -325,7 +325,7 @@
 .BESTSELLER-PRODUCT-1 {
   width: Fixed 1124px;
   height: 1086px;
-  left: 195px;
+  /* left: 125px; */
   padding: 48px 0px 48px 0px;
   gap: 24px;
   opacity: 0px;
@@ -348,6 +348,7 @@
   margin: 0;
   width: 1000px;
   position: relative;
+  right: 70px;
   margin-top: 40px;
 }
 
@@ -415,7 +416,7 @@
 }
 
 .cliants{
-width: 1340px;
+width: 1225px;
 height: 175px;
 padding: 0px 195px 0px 195px;
 gap: 40px;
@@ -423,7 +424,6 @@ opacity: 0px;
 background: #FAFAFA; 
 position: relative;
 bottom: 50px;
-
 }
 
 .cliants-1{
@@ -432,6 +432,44 @@ height: 175px;
 padding: 50px 0px 50px 0px;
 gap: 30px;
 opacity: 0px;
+}
+
+.product-bandage{
+  width: 1225px;
+height: 142px;
+padding: 0px 195px 4px 195px;
+gap: 40px;
+opacity: 0px;
+background: #FAFAFA;  
+display: flex;
+justify-content: space-between; 
+}
+
+.product-bandage h3{
+   width: 114px;
+  height: 32px;
+  top: 13px;
+  gap: 0px;
+  opacity: 0px;
+
+
+font-family: "Montserrat";
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+color: #252B42; 
+padding-top: 60px;
+}
+
+.product-bandage img{
+  /* width: 112px; */
+  height: 24px;
+  gap: 20px;
+  opacity: 0px;
+  margin-top: 60px;
+  padding-left: 10px;
 }
 
 #product-last-footer{
