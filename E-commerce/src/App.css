@@ -288,10 +288,8 @@ section li {
   width: 120px;
   height: 180px;
   background-color: #d8dbe5;
-
   padding: 0;
   margin: 0;
-
   width: 183px;
   height: 238px;
   gap: 0px;
@@ -723,6 +721,7 @@ section h5 {
   text-align: center;
   color: #23856d;
   padding-top: 60px;
+
 }
 
 .better-experience button {
@@ -748,7 +747,6 @@ section h5 {
   justify-content: space-between;
   width: 1230px; ;
 }
-
 .bandage h3 {
   width: 114px;
   height: 32px;
@@ -869,6 +867,7 @@ footer a {
 }
 
  #learn-more h6 {
+
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
@@ -877,6 +876,7 @@ footer a {
   text-align: left;
   color: #737373;
 } 
+
 
 #learn-more img {
   width: 12px;
@@ -888,6 +888,7 @@ footer a {
   gap: 0px;
   opacity: 0px;
 }
+
 
 .menu-toggle {
   display: none;
@@ -1183,3 +1184,4 @@ background-color: #23a6f0;
     }
   }
 } 
+
