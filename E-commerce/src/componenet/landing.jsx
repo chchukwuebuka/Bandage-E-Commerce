@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { increment } from "../assets/appSlice";
 import { useDispatch } from "react-redux";
 import { useGetPostsQuery } from "../assets/apiSlice";
@@ -110,7 +111,7 @@ function Landing() {
               <img src={search} alt="" />
             </li>
             <li>
-              <img src={search1} alt="" />
+            <Link to="/product"><img src={search1} alt="" /></Link>   
             </li>
             <li>
               <img src={search2} alt="" />
@@ -202,7 +203,7 @@ function Landing() {
                   alt={product.title}
                 />
                 <h5>{product.title}</h5>
-                <p> {product.category}</p>
+                <p>{product.category}</p>
                 <div id="product-amount">
                   <p id="product-price">${product.price}</p>
                   <p id="discount">{product.discountPercentage}%</p>
