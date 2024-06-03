@@ -14,4 +14,3 @@ export const apiSlice = createApi({
 export const { useGetPostsQuery } = apiSlice;
 
 
-

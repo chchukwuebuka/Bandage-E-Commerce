@@ -1,26 +1,32 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import './product.css'
+import './cartProduct.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Landing from './componenet/landing'
 import Product from './componenet/product'
-import CartProduct from './componenet/cartProduct';
+import CartProduct from "./componenet/cartProduct";
+
+const router = createBrowserRouter([
+  {
+      path: "/",
+      element: <Landing />,
+  },
+  {
+      path: "/product/:id",
+      element: <Product />,
+  },
+  {
+      path: "/cartProduct/",
+      element: <CartProduct />,
+  },
+]);
 
 function App() {
- 
-
   return (
-
-     (
-      <Router>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/cartProduct" element={<CartProduct />} />
-        </Routes>
-      </Router>
-    )
-   
-  )
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
-export default App
+export default App;
