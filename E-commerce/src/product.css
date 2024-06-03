@@ -14,10 +14,12 @@ body {
 
 /* Navbar */
 .product-nav {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 9px 143px;
+
 }
 
 .product-nav-bar {
@@ -199,6 +201,7 @@ body {
   margin-left: 10px;
 }
 
+
 /* Carousel Product */
 
 .carousel {
@@ -358,6 +361,7 @@ body {
   padding: 10px 20px 10px 20px;
   gap: 10px;
   border-radius: 5px 0px 0px 0px;
+
   opacity: 0px;
   background: #23a6f0;
 }
@@ -439,6 +443,7 @@ body {
 #product-product-price {
   color: #bdbdbd;
 }
+
 
 /* Clients Section */
 .clients {
