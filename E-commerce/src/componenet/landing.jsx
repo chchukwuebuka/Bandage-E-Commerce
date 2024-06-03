@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link,  } from "react-router-dom";
 import { increment } from "../assets/appSlice";
 import { useDispatch } from "react-redux";
 import { useGetPostsQuery } from "../assets/apiSlice";
@@ -42,9 +42,10 @@ import facebook from "./images/facebook.png";
 import instagram from "./images/ant-design_instagram-outlined.png";
 import twitter from "./images/twitter.png";
 import none from "./images/@none.png";
-import iconSearch from './images/icn search .icn-xs.png'
-import iconCart from './images/icn shopping-cart .icn-xs.png'
-import iconMenu from './images/icn menu .icn-xs.png'
+import iconSearch from "./images/icn search .icn-xs.png";
+import iconCart from "./images/icn shopping-cart .icn-xs.png";
+import iconMenu from "./images/icn menu .icn-xs.png";
+import { NavLink } from "react-router-dom";
 
 function Landing() {
   const { data, error, isLoading } = useGetPostsQuery();
@@ -125,16 +126,16 @@ function Landing() {
         </div>
       </nav>
 
-      <div className="navbar-light mobile-nav-bar" >
+      <div className="navbar-light mobile-nav-bar">
         <div className="icon-mobile-view">
           <img className="icon-mobile-view-1" src={iconSearch} alt="" />
           <img className="icon-mobile-view-2" src={iconCart} alt="" />
         </div>
         <div className="mobile-home">
-        <li id="mobile-home">Home</li>
-        <li id="mobile-home">Product</li>
-        <li id="mobile-home">Pricing</li>
-        <li id="mobile-home">Contact</li>
+          <li id="mobile-home">Home</li>
+          <li id="mobile-home">Product</li>
+          <li id="mobile-home">Pricing</li>
+          <li id="mobile-home">Contact</li>
         </div>
         <div>
           <h3>Bandage</h3>
@@ -160,9 +161,7 @@ function Landing() {
               <img className="mobile-view" src={search} alt="" />
             </li>
             <li className="mobile-view">
-              <Link to="/product">
-                <img src={search1} alt="" />
-              </Link>
+              <img src={search1} alt="" />
             </li>
             <li>
               <img className="search2" src={search2} alt="" />
@@ -184,7 +183,7 @@ function Landing() {
             <img src={heroimage} alt="" />
           </div>
         </div>
-        <div>
+        <div className="mobile-hero" >
           <div>
             <div className="inner-hero">
               <h6>
@@ -196,7 +195,7 @@ function Landing() {
             <img id="inner-hero-img" src={heroimage1} alt="" />
           </div>
           <div className="inner-hero-section">
-            <div >
+            <div>
               <div className="inner-hero">
                 <h6>
                   <span className="items">Items</span>
@@ -221,44 +220,30 @@ function Landing() {
       </div>
 
       <section>
-        <div>
+        <div className="mobile-product">
           <h4>Featured Products</h4>
           <h3>BESTSELLER PRODUCTS</h3>
           <p>Problems trying to resolve the conflict between </p>
         </div>
 
-        {/* <ul className="product-grid">
-          {data && data.products && data.products.map((product) => ( 
-             <li key={product.id}>
-               <img className="section-images" src={product.images} alt={product.title} /> 
-              <h5>{product.title}</h5>
-               <p >{product.description}</p> 
-             <p>Category: {product.category}</p>
-             <p>Price: ${product.price}</p>
-               <p>Discount: {product.discountPercentage}%</p> 
-                <p>Rating: {product.rating}</p>
-               <p>Stock: {product.stock}</p>
-              <p>Tags: {product.tags.join(', ')}</p>  
-             </li>
-           ))}
-     </ul>  */}
-
         <ul className="product-grid">
           {data &&
             data.products &&
             data.products.slice(0, visibleProducts).map((product) => (
-              <li key={product.id} className="product-item">
-                <img
-                  className="section-images"
-                  src={product.images[0]}
-                  alt={product.title}
-                />
-                <h5>{product.title}</h5>
-                <p>{product.category}</p>
-                <div id="product-amount">
-                  <p id="product-price">${product.price}</p>
-                  <p id="discount">{product.discountPercentage}%</p>
-                </div>
+              <li className="product-item" key={product.id}>
+                <NavLink to={`/product/${product.id}`} className="product-link">
+                  <img
+                    className="section-images"
+                    src={product.images[0]}
+                    alt={product.title}
+                  />
+                  <h5>{product.title}</h5>
+                  <p>{product.category}</p>
+                  <div id="product-amount">
+                    <p id="product-price">${product.price}</p>
+                    <p id="discount">{product.discountPercentage}%</p>
+                  </div>
+                </NavLink>
               </li>
             ))}
         </ul>
@@ -271,9 +256,11 @@ function Landing() {
       </section>
 
       <div className="feature-products">
+        <div className="mobile-feature-product">
         <h4>Featured Products</h4>
         <h3>THE BEST SERVICES</h3>
         <p>Problems trying to resolve the conflict between </p>
+        </div>
         <div className="feature-products-1">
           <div className="inner-cards">
             <img src={book} alt="" />
@@ -324,7 +311,7 @@ function Landing() {
                     </p>
                   </div>
                   <div>
-                  <p className="comments">
+                    <p className="comments">
                       <img src={iconchart} alt="" />
                       10 comments
                     </p>

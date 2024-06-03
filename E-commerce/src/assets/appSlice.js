@@ -1,58 +1,45 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  commers: [],
+  items: [],
+  quantities: {},
 };
 
-export const appSlice = createSlice({
-  name: "counter",
+const cartSlice = createSlice({
+  name: "cart",
   initialState,
   reducers: {
+    addToCart: (state, action) => {
+      const item = action.payload;
+      const existingItem = state.items.find((i) => i.id === item.id);
+      if (existingItem) {
+        state.quantities[item.id]++;
+      } else {
+        state.items.push(item);
+        state.quantities[item.id] = 1;
+      }
+    },
+    removeFromCart: (state, action) => {
+      const itemId = action.payload;
+      state.items = state.items.filter((item) => item.id !== itemId);
+      delete state.quantities[itemId];
+    },
     increment: (state, action) => {
-      const counter = {
-        id: nanoid(),
-        text: action.payload,
-      };
-      state.commers.push(counter);
+      const itemId = action.payload;
+      if (state.quantities[itemId] !== undefined) {
+        state.quantities[itemId]++;
+      }
     },
     decrement: (state, action) => {
-      state.commers = state.commers.filter(
-        (counter) => counter.id !== action.payload
-      );
+      const itemId = action.payload;
+      if (state.quantities[itemId] > 1) {
+        state.quantities[itemId]--;
+      }
     },
   },
 });
 
-export const { increment, decrement } = appSlice.actions;
+export const { addToCart, removeFromCart, increment, decrement } =
+  cartSlice.actions;
 
-export default appSlice.reducer;
-
-// import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
-// export const fetchCounter = createAsyncThunk("fetchCounter", async () => {
-//   const data = await fetch("https://dummyjson.com/products");
-//   return data.json();
-// });
-
-// const appSlice = createSlice({
-//   name: "counter",
-//   initialState: {
-//     isLoading: false,
-//     data: "",
-//     error: false,
-//   },
-//   extraReducers: (builder) => {
-//     builder.addCase(fetchCounter.pending, (state, action) => {
-//       state.isLoading = true;
-//     });
-//     builder.addCase(fetchCounter.fulfilled, (state, action) => {
-//       state.isLoading = false;
-//       state.date = action.payload;
-//     });
-//     builder.addCase(fetchCounter.rejected, (state, action) => {
-//       state.error = true;
-//     });
-//   },
-// });
-
-// export default appSlice;
+export default cartSlice.reducer;
